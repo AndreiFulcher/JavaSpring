@@ -1,12 +1,13 @@
 package com.andreifulcher.DSList.services;
 
 import java.util.List;
-import java.util.stream.Collectors;
 
-import com.andreifulcher.DSList.dto.GameMinDTO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
+import com.andreifulcher.DSList.dto.GameDTO;
+import com.andreifulcher.DSList.dto.GameMinDTO;
 import com.andreifulcher.DSList.entities.Game;
 import com.andreifulcher.DSList.repositories.GameRepository;
 
@@ -16,8 +17,14 @@ public class GameService {
     @Autowired
     private GameRepository repository;
 
+    @Transactional(readOnly = true)
+    public GameDTO findById(Long id) {
+        Game result = repository.findById(id).get();
+        return new GameDTO(result);
+    }
+
     public List<GameMinDTO> findAll(){
-        List<Game> result = repository.findAll(); // pega os jogos do banco
+        List<Game> result = repository.findAll();
         return result.stream().map(GameMinDTO::new).toList();
     }
 }

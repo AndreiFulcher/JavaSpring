@@ -1,10 +1,12 @@
 package com.andreifulcher.DSList.controllers;
 
+import com.andreifulcher.DSList.dto.GameDTO;
 import com.andreifulcher.DSList.dto.GameMinDTO;
 import com.andreifulcher.DSList.entities.Game;
 import com.andreifulcher.DSList.services.GameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,5 +23,11 @@ public class GameController {
     public List<GameMinDTO> findAll() { //Responde a requisição GET do HTTP
         return gameService.findAll();
     }
+
+    @GetMapping(value = "/{id}")//Responde a requisição por id
+    public GameDTO findById(@PathVariable long id) { //Responde a requisição GET do HTTP
+        return gameService.findById(id);
+    }
+
 
 }
