@@ -10,15 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
 
-@RestController
+@RestController//Responsável por receber as requisições HTTP, GET/games, POST/games e DELETE/games
 @RequestMapping(value = "/games")
 public class GameController {
 
-    @Autowired
+    @Autowired//Injeta a dependência do GameService, que precisa de um GameRepository
     private GameService gameService;
 
     @GetMapping
-    public List<GameMinDTO> findAll() {
+    public List<GameMinDTO> findAll() { //Responde a requisição GET do HTTP
         return gameService.findAll();
     }
 
