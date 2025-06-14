@@ -8,7 +8,7 @@
 </p>
 
 <p align="center">
-    <b>Trata-se de uma aplicação web desenvolvida em Java com Spring Boot e banco de dados SQL, que trabalha com listas de jogos, permitindo aos usuários realizar pesquisas de jogos, bem como visualizar e gerenciar essas listas de forma organizada.</b>
+    <b>Trata-se de uma aplicação web desenvolvida em Java com Spring Boot e banco de dados SQL, que trabalha com listas de jogos, permitindo aos usuários realizar pesquisas de jogos, bem como visualizar e gerenciar as listas.</b>
 </p>
 <p align="center">
     <b>Projeto back end do <a href="https://devsuperior.com" title="Site da DevSuperior">Intensivão DevSuperior</a></b>
