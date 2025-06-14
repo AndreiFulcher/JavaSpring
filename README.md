@@ -1,14 +1,30 @@
-# Projeto DSList - Intensivão Java Spring
+<h1 align="center" style="font-weight: bold;">Projeto DSList - Intensivão Java Spring 💻</h1>
 
-## Sobre o Projeto:
+<p align="center">
+ <a >Java</a> • 
+ <a >Spring Boot</a> • 
+  <a >API</a> •
+ <a >DevSuperior</a>
+</p>
 
-Projeto back end do **Intensivão DevSuperior**, evento organizado pela [DevSuperior](https://devsuperior.com "Site da DevSuperior"). Trata-se de uma aplicação web desenvolvida em Java com Spring Boot e banco de dados SQL, que trabalha com listas de jogos, permitindo aos usuários realizar pesquisas de jogos, bem como visualizar e gerenciar essas listas de forma organizada.
+<p align="center">
+    <b>Trata-se de uma aplicação web desenvolvida em Java com Spring Boot e banco de dados SQL, que trabalha com listas de jogos, permitindo aos usuários realizar pesquisas de jogos, bem como visualizar e gerenciar essas listas de forma organizada.</b>
+</p>
+<p align="center">
+    <b>Projeto back end do <a href="https://devsuperior.com" title="Site da DevSuperior">Intensivão DevSuperior</a></b>
+</p>
 
-## Tecnologias utilizadas:
 
-Sistemas web e recursos | Cliente/servidor, HTTP, JSON | Padrão Rest para API web | Entidades e ORM | Database seeding | Padrão camadas | Controller, service, repository | Padrão DTO | Relacionamentos N-N | Classe de associação, embedded id
-| Consultas SQL no Spring Data JPA | Projections | Ambiente local com Docker Compose | Processo de deploy com CI/CD | Configuração de CORS
+<h2 id="technologies">Tecnologias</h2>
 
+- Java
+- Spring Boot
+- PostgreSQL
+- API RESTful
+- PostMan
+- Docker
+- Deploy com CI/CD
+- Configuração de CORS
 
 ## Modelo de domínio DSList
 
@@ -158,7 +174,3 @@ INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 8, 2);
 INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 9, 3);
 INSERT INTO tb_belonging (list_id, game_id, position) VALUES (2, 10, 4);
 ```
-
-### Script Docker Compose
-
-https://gist.github.com/acenelio/5e40b27cfc40151e36beec1e27c4ff71
